@@ -14,7 +14,7 @@ class Solution {
                 c=0;
             }
         }
-
+         //If the array ends with zeros, the last segment’s subarrays are never added to the sum because the else branch (which adds subarray counts) does not get triggered after the last zero sequence.
         sum =sum+(long)(c*(c+1))/2;
         return sum;
         
