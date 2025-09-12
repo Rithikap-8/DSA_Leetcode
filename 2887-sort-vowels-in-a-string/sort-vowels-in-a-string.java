@@ -20,7 +20,7 @@ char[] vowelsArray = sbv.toString().toCharArray();
         Arrays.sort(vowelsArray);
         String sortedVowels = new String(vowelsArray);
 
-        System.out.print(sortedVowels);
+        // System.out.print(sortedVowels);
         int vi=0;
         for(int i=0;i<sb.length();i++)
         {
