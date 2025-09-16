@@ -20,6 +20,7 @@ class Solution {
                 }
                 st.remove(st.size()-1);
                 curr = lcm(top,curr,g);
+                System.out.print(curr);
             }
             st.add(curr);
         }
