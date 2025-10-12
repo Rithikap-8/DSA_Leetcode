@@ -3,23 +3,19 @@ class Solution {
 
         HashMap<Integer,Integer> map = new HashMap<>();
 
-        for(int i=0;i<nums.length;i++)
+        for(int i:nums)
         {
-            map.put(nums[i],map.getOrDefault(nums[i],0)+1);
+            map.put(i,map.getOrDefault(i,0)+1);
         }
         int sum=0;
 
         for(Map.Entry<Integer,Integer> e : map.entrySet())
         {
             int val = e.getValue();
+             int i = e.getKey();
             if(val%k==0)
             {
-                int i = e.getKey();
-                while(val>0)
-                {
-                    sum = sum+i;
-                    val--;
-                }
+                sum+= val*i;
             }
         }
         return sum;
