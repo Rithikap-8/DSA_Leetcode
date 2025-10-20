@@ -4,14 +4,15 @@ class Solution {
         int result =0;
         for(int i=0;i<operations.length;i++)
         {
-            if(operations[i].equals("--X") ||operations[i].equals("X--") )
-            {
-                result--;
-            }
-            else 
-            {
-                result++;
-            }
+            // if(operations[i].equals("--X") ||operations[i].equals("X--") )
+            // {
+            //     result--;
+            // }
+            // else 
+            // {
+            //     result++;
+            // }
+            result += operations[i].charAt(1)== '+' ? 1 : -1;
         }
         return result;
     }
