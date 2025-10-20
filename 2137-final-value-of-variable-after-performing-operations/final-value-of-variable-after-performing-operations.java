@@ -6,11 +6,11 @@ class Solution {
         {
             if(operations[i].equals("--X") ||operations[i].equals("X--") )
             {
-                result-=1;
+                result--;
             }
-            else if(operations[i].equals("++X") ||operations[i].equals("X++"))
+            else 
             {
-                result+=1;
+                result++;
             }
         }
         return result;
