@@ -51,22 +51,3 @@ class Solution {
     }
 }
 
-// Main class
-public class Main {
-    public static void main(String[] args) {
-        // Input array
-        int[] nums = {1, 2, 3};
-
-        // Create object
-        Solution sol = new Solution();
-
-        // Call function
-        sol.nextPermutation(nums);
-
-        // Print result
-        for (int num : nums) {
-            System.out.print(num + " ");
-        }
-        System.out.println();
-    }
-}
