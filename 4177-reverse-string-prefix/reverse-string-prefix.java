@@ -1,8 +1,8 @@
 class Solution {
     public String reversePrefix(String s, int k) {
-        StringBuilder prefix = new StringBuilder(s.substring(0, k));
-        prefix.reverse();
-        return prefix.toString()+s.substring(k);
+    new StringBuilder(s.substring(0, k));
+       
+        return new StringBuilder(s.substring(0, k)).reverse().toString()+s.substring(k);
         
     }
 }
